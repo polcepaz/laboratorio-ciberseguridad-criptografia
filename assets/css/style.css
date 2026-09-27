@@ -1,0 +1,812 @@
+/*
+ * Laboratorio de Ciberseguridad y Criptografía
+ * Universidad Nacional del Altiplano – Puno
+ * Doctorado en Ciencias de la Computación
+ * 
+ * Estilos Cover de Bootstrap con identidad institucional.
+ * Paleta corregida con !important para sobreescribir Bootstrap.
+ * 
+ * @package CryptoLab
+ * @version 2.0.2
+ */
+
+/* ============================
+   OVERRIDE VARIABLES BOOTSTRAP
+   ============================ */
+:root {
+    --bs-body-bg: #0d1117 !important;
+    --bs-body-color: #c9d1d9 !important;
+    --bs-white-rgb: 201, 209, 217 !important;
+    --bs-heading-color: #c9d1d9 !important;
+    --bs-link-color: #58a6ff !important;
+    --bs-link-hover-color: #79b8ff !important;
+    --bs-code-color: #3fb950 !important;
+}
+
+/* ============================
+   CUSTOM DEFAULT BUTTON
+   ============================ */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+    color: #333 !important;
+    text-shadow: none !important;
+}
+
+/* ============================
+   BASE STRUCTURE
+   ============================ */
+body {
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+/* ============================
+   COVER CONTAINER
+   ============================ */
+.cover-container {
+    max-width: 42em;
+}
+
+/* ============================
+   HEADER / MASTHEAD
+   ============================ */
+.masthead {
+    margin-bottom: auto;
+}
+
+.masthead-brand {
+    color: #c9d1d9 !important;
+    font-size: 1.2rem;
+}
+
+.masthead-brand img {
+    vertical-align: middle;
+}
+
+.nav-masthead .nav-link {
+    color: rgba(201, 209, 217, .6) !important;
+    border-bottom: .25rem solid transparent !important;
+    padding: .25rem 0 !important;
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(201, 209, 217, .25) !important;
+    color: #c9d1d9 !important;
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #58a6ff !important;
+    border-bottom-color: #58a6ff !important;
+}
+
+/* ============================
+   COURSE BANNER
+   ============================ */
+.course-banner {
+    background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%) !important;
+    color: #c9d1d9 !important;
+}
+
+.course-banner h4 {
+    color: #58a6ff !important;
+}
+
+/* ============================
+    MAIN CONTENT
+   ============================ */
+.inner {
+    max-width: 42em;
+}
+
+.display-4 {
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    color: #c9d1d9 !important;
+}
+
+.lead {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: #8b949e !important;
+}
+
+/* ============================
+   CARDS
+   ============================ */
+.card {
+    border: 1px solid rgba(48, 53, 60, .8) !important;
+    border-radius: .5rem;
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5) !important;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%) !important;
+    border-bottom: 2px solid #58a6ff !important;
+    color: #c9d1d9 !important;
+    font-weight: 600 !important;
+}
+
+.card-body {
+    padding: 1.5rem !important;
+    background-color: transparent !important;
+    color: #c9d1d9 !important;
+}
+
+.card-title {
+    color: #c9d1d9 !important;
+}
+
+.card-text {
+    color: #8b949e !important;
+}
+
+/* ============================
+   BUTTONS
+   ============================ */
+.btn {
+    font-weight: 600 !important;
+    border-radius: .375rem;
+    transition: all .15s ease-in-out;
+    color: #fff !important;
+}
+
+.btn-cyan {
+    color: #fff !important;
+    background-color: #00d4ff !important;
+    border-color: #00d4ff !important;
+}
+
+.btn-cyan:hover {
+    color: #0a1628 !important;
+    background-color: #00a8cc !important;
+    border-color: #00a8cc !important;
+}
+
+.btn-green {
+    color: #fff !important;
+    background-color: #38a169 !important;
+    border-color: #38a169 !important;
+}
+
+.btn-green:hover {
+    color: #fff !important;
+    background-color: #2f855a !important;
+    border-color: #2f855a !important;
+}
+
+.btn-purple {
+    color: #fff !important;
+    background-color: #805ad5 !important;
+    border-color: #805ad5 !important;
+}
+
+.btn-purple:hover {
+    color: #fff !important;
+    background-color: #6b46c1 !important;
+    border-color: #6b46c1 !important;
+}
+
+.btn-orange {
+    color: #fff !important;
+    background-color: #dd6b20 !important;
+    border-color: #dd6b20 !important;
+}
+
+.btn-orange:hover {
+    color: #fff !important;
+    background-color: #c05621 !important;
+    border-color: #c05621 !important;
+}
+
+.btn-blue {
+    color: #fff !important;
+    background-color: #3182ce !important;
+    border-color: #3182ce !important;
+}
+
+.btn-blue:hover {
+    color: #fff !important;
+    background-color: #2c5282 !important;
+    border-color: #2c5282 !important;
+}
+
+.btn-red {
+    color: #fff !important;
+    background-color: #e53e3e !important;
+    border-color: #e53e3e !important;
+}
+
+.btn-red:hover {
+    color: #fff !important;
+    background-color: #c53030 !important;
+    border-color: #c53030 !important;
+}
+
+/* ============================
+   BADGES
+   ============================ */
+.badge-info {
+    background-color: #00d4ff !important;
+    color: #0a1628 !important;
+}
+
+.badge-success {
+    background-color: #38a169 !important;
+    color: #fff !important;
+}
+
+.badge-warning {
+    background-color: #dd6b20 !important;
+    color: #fff !important;
+}
+
+.badge-danger {
+    background-color: #e53e3e !important;
+    color: #fff !important;
+}
+
+/* ============================
+   TABLES
+   ============================ */
+.table {
+    color: #c9d1d9 !important;
+}
+
+.table-dark {
+    background-color: #0a1628 !important;
+    border-color: #1a2d4a !important;
+    color: #c9d1d9 !important;
+}
+
+.table-dark th {
+    color: #58a6ff !important;
+    border-color: #1a2d4a !important;
+    background-color: #0a1628 !important;
+}
+
+.table-dark td {
+    color: #c9d1d9 !important;
+    border-color: #1a2d4a !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(88, 166, 255, .1) !important;
+}
+
+.table-bordered {
+    border-color: rgba(48, 53, 60, .8) !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-color: rgba(48, 53, 60, .8) !important;
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+   FORMS
+   ============================ */
+.form-control,
+.form-select {
+    background-color: #0d1117 !important;
+    border: 1px solid #30363d !important;
+    color: #c9d1d9 !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #58a6ff !important;
+    box-shadow: 0 0 0 .25rem rgba(88, 166, 255, .25) !important;
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+}
+
+.form-control::placeholder {
+    color: #484f58 !important;
+}
+
+.form-label {
+    color: #c9d1d9 !important;
+    font-weight: 600;
+}
+
+.form-text {
+    color: #8b949e !important;
+}
+
+.form-check-input {
+    background-color: #0d1117 !important;
+    border-color: #30363d !important;
+}
+
+.form-check-input:checked {
+    background-color: #58a6ff !important;
+    border-color: #58a6ff !important;
+}
+
+.form-check-label {
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+   ALERTS
+   ============================ */
+.alert {
+    border: 1px solid rgba(48, 53, 60, .8) !important;
+    border-radius: .375rem;
+    color: #c9d1d9 !important;
+}
+
+.alert-warning {
+    background-color: #2d1b0e !important;
+    border-color: #dd6b20 !important;
+    color: #f0d68a !important;
+}
+
+.alert-danger {
+    background-color: #2d0e0e !important;
+    border-color: #e53e3e !important;
+    color: #f0b4b4 !important;
+}
+
+.alert-info {
+    background-color: #0e1f3d !important;
+    border-color: #58a6ff !important;
+    color: #8b949e !important;
+}
+
+.alert-success {
+    background-color: #0e2d1b !important;
+    border-color: #38a169 !important;
+    color: #8b949e !important;
+}
+
+/* ============================
+   NAVBAR
+   ============================ */
+.navbar-brand img {
+    height: 40px !important;
+    width: auto !important;
+}
+
+.navbar-brand {
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer {
+    background-color: #0a1628 !important;
+    border-top: 2px solid #58a6ff !important;
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+   PROGRESS BARS
+   ============================ */
+.progress-bar {
+    transition: width .5s ease;
+    color: #0a1628 !important;
+    font-weight: 600;
+    background-color: #58a6ff !important;
+}
+
+.progress {
+    background-color: #21262d !important;
+}
+
+/* ============================
+    TEXT UTILITIES
+   ============================ */
+.text-cyan {
+    color: #58a6ff !important;
+}
+
+.text-navy {
+    color: #58a6ff !important;
+}
+
+.text-green {
+    color: #3fb950 !important;
+}
+
+.text-success {
+    color: #3fb950 !important;
+}
+
+.text-info {
+    color: #58a6ff !important;
+}
+
+.text-danger {
+    color: #f85149 !important;
+}
+
+.text-warning {
+    color: #d29922 !important;
+}
+
+.text-muted {
+    color: #8b949e !important;
+}
+
+.text-white {
+    color: #f0f6fc !important;
+}
+
+.text-light {
+    color: #c9d1d9 !important;
+}
+
+.text-dark {
+    color: #c9d1d9 !important;
+}
+
+.bg-navy {
+    background-color: #0a1628 !important;
+    color: #c9d1d9 !important;
+}
+
+.bg-dark {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+}
+
+.bg-light {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+}
+
+.bg-white {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+    TABLE COLORS
+    Sobreescritura para usar #e4d1d1 como color de texto
+    ============================ */
+.table,
+.table td,
+.table th,
+.table thead th,
+.table tbody td,
+.table-dark,
+.table-dark td,
+.table-dark th,
+.table-dark thead th,
+.table-dark tbody td,
+.comparison-table,
+.comparison-table td,
+.comparison-table th,
+.comparison-table thead th,
+.comparison-table tbody td,
+table td,
+table th {
+    color: #e4d1d1 !important;
+}
+
+.table-dark thead th {
+    background-color: #0a1628 !important;
+    color: #e4d1d1 !important;
+    border-color: #30363d !important;
+}
+
+.table-dark tbody td {
+    background-color: #161b22 !important;
+    color: #e4d1d1 !important;
+    border-color: #30363d !important;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: rgba(228, 209, 209, .05) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(228, 209, 209, .1) !important;
+}
+
+/* ============================
+    UTILITIES
+   ============================ */
+.bg-cyan { background-color: #00d4ff !important; color: #0a1628 !important; }
+.bg-green { background-color: #38a169 !important; color: #fff !important; }
+.bg-purple { background-color: #805ad5 !important; color: #fff !important; }
+.bg-orange { background-color: #dd6b20 !important; color: #fff !important; }
+.bg-blue { background-color: #3182ce !important; color: #fff !important; }
+.bg-red { background-color: #e53e3e !important; color: #fff !important; }
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+    .masthead-brand {
+        font-size: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 1.8rem;
+    }
+    
+    .nav-masthead .nav-link {
+        padding: .2rem 0;
+        font-size: .85rem;
+    }
+    
+    .course-banner .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .inner {
+        padding: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(1rem); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn .3s ease-out;
+}
+
+/* ============================
+    MODULE-SPECIFIC STYLES
+   ============================ */
+.module-icon-sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 1.2rem;
+}
+
+/* ============================
+    RESULT CARDS
+   ============================ */
+.result-card {
+    background-color: #0a1628 !important;
+    border: 1px solid #30363d !important;
+    border-radius: .5rem;
+    padding: 1.5rem !important;
+    color: #58a6ff !important;
+    font-family: 'Courier New', monospace;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* ============================
+    ASCII DISPLAY
+   ============================ */
+.ascii-display {
+    background-color: #0d1117 !important;
+    color: #3fb950 !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    overflow-x: auto;
+    border: 1px solid #30363d !important;
+}
+
+/* ============================
+    FORMULAS
+   ============================ */
+.formula-box {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px 0;
+    color: #c9d1d9 !important;
+}
+
+.formula-box .variable { color: #58a6ff !important; font-weight: bold; }
+.formula-box .operator { color: #f85149 !important; font-weight: bold; }
+.formula-box .result { color: #3fb950 !important; font-weight: bold; }
+
+/* ============================
+    PROCESS TABLE
+   ============================ */
+.process-table {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #c9d1d9 !important;
+}
+
+.process-table th {
+    background-color: #0a1628 !important;
+    color: #58a6ff !important;
+    border-color: #30363d !important;
+}
+
+.process-table td {
+    border-color: #30363d !important;
+    color: #e4d1d1 !important;
+}
+
+.process-table tr:nth-child(even) {
+    background-color: rgba(88, 166, 255, .05) !important;
+}
+
+.process-table tr:hover {
+    background-color: rgba(88, 166, 255, .1) !important;
+}
+
+/* ============================
+    CHART CONTAINER
+   ============================ */
+.chart-container {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: .5rem;
+    padding: 20px !important;
+}
+
+/* ============================
+    BADGE STYLES
+   ============================ */
+.badge {
+    font-weight: 600 !important;
+}
+
+/* ============================
+    DROPDOWN MENU
+   ============================ */
+.dropdown-menu {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+}
+
+.dropdown-item {
+    color: #c9d1d9 !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(88, 166, 255, .1) !important;
+    color: #58a6ff !important;
+}
+
+/* ============================
+    NAV LINK ACTIVE
+   ============================ */
+.nav-pills .nav-link.active,
+.nav-link.active {
+    background-color: rgba(88, 166, 255, .2) !important;
+    color: #58a6ff !important;
+}
+
+/* ============================
+    LIST GROUPS
+   ============================ */
+.list-group-item {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #c9d1d9 !important;
+}
+
+/* ============================
+    PAGINATION
+   ============================ */
+.page-item .page-link {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #c9d1d9 !important;
+}
+
+.page-item.active .page-link {
+    background-color: #58a6ff !important;
+    border-color: #58a6ff !important;
+    color: #0a1628 !important;
+}
+
+/* ============================
+    NAVBAR FIX
+   ============================ */
+.navbar {
+    background-color: #0a1628 !important;
+    border-bottom: 2px solid #58a6ff !important;
+}
+
+.navbar-brand {
+    color: #c9d1d9 !important;
+}
+
+.navbar-brand strong {
+    color: #58a6ff !important;
+}
+
+/* ============================
+    COURSE BANNER FIX
+   ============================ */
+.course-banner h4 {
+    color: #58a6ff !important;
+}
+
+.course-banner small {
+    color: #8b949e !important;
+}
+
+/* ============================
+    SECTION HEADINGS
+   ============================ */
+h1, h2, h3, h4, h5, h6 {
+    color: #c9d1d9 !important;
+}
+
+h1.display-4 {
+    color: #58a6ff !important;
+}
+
+/* ============================
+    SECTION TITLE
+   ============================ */
+.section-title {
+    color: #c9d1d9 !important;
+}
+
+.section-subtitle {
+    color: #8b949e !important;
+}
+
+/* ============================
+    SECURITY NOTICE
+   ============================ */
+.security-notice {
+    background-color: #2d0e0e !important;
+    border-color: #e53e3e !important;
+    color: #f0b4b4 !important;
+}
+
+/* ============================
+    HERO BADGE
+   ============================ */
+.hero-badge {
+    background-color: rgba(0, 212, 255, .1) !important;
+    border: 2px solid #58a6ff !important;
+    color: #c9d1d9 !important;
+}
+
+.hero-badge div {
+    color: #c9d1d9 !important;
+}
